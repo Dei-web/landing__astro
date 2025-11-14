@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+.whatsapp-btn {
+  width: 3.5rem; /* tamaño cerrado */
+  height: 3.5rem;
+}
+
+.whatsapp-btn:hover {
+  width: 13rem; /* tamaño desplegado */
+}
+
+/* Pequeña animación flotante */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.whatsapp-btn img {
+  animation: float 2s ease-in-out infinite;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 100px; /* Evita que el navbar tape el contenido */
+}

@@ -1,0 +1,114 @@
+---
+import { Phone } from "lucide-react";
+---
+
+<!-- Sección de reparación urgente -->
+<section  id="contacto" class="bg-blue-50 py-10 text-center rounded-lg mx-6 my-10">
+  <h2 class="text-2xl font-semibold text-gray-800 mb-2">
+    ¿Necesitas una reparación urgente?
+  </h2>
+  <p class="text-gray-600 mb-6">
+    Contáctanos por WhatsApp y te atenderemos de inmediato 
+  </p>
+  <a
+    href="https://wa.me/573106314709?text=Hola,%20necesito%20una%20reparación%20urgente"
+    target="_blank"
+    class="inline-flex items-center gap-2 bg-blue-600 text-white px-5 py-3 rounded-lg font-medium hover:bg-blue-700 transition"
+  >
+    <Phone className="w-5 h-5" />
+    Contactar ahora
+  </a>
+</section>
+
+<!-- Sección principal de contacto -->
+<section class="py-20 bg-gray-50">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center text-gray-900 mb-4">
+      Contacto
+    </h2>
+    <p class="text-center text-gray-600 mb-10">
+      Taller AutoFix  <br />
+      Carrera 45 #23 - 15, Barranquilla, Colombia <br />
+      Horario: Lunes a Viernes — 8:00 - 12:00 / 14:00 - 18:00 <br />
+      Urgencias disponibles con suplemento.
+    </p>
+
+    <div class="bg-white shadow-lg rounded-2xl p-8">
+      <form
+        id="contact-form"
+        class="grid grid-cols-1 md:grid-cols-2 gap-6"
+        onsubmit="return false"
+      >
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Nombre completo</label>
+          <input
+            type="text"
+            placeholder="Introduce tu nombre"
+            class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none"
+          />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Teléfono</label>
+          <input
+            type="tel"
+            placeholder="Introduce tu teléfono"
+            class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none"
+          />
+        </div>
+
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Servicio</label>
+          <select
+            class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none"
+          >
+            <option value="">Selecciona un servicio</option>
+            <option value="mecanica">Mecánica general</option>
+            <option value="frenos">Frenos y suspensión</option>
+            <option value="aceite">Cambio de aceite</option>
+            <option value="bateria">Revisión de batería</option>
+            <option value="pintura">Pintura</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-1">Email (opcional)</label>
+          <input
+            type="email"
+            placeholder="Introduce tu correo"
+            class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none"
+          />
+        </div>
+
+        <div class="md:col-span-2">
+          <label class="block text-sm font-medium text-gray-700 mb-1">Describe tu avería o proyecto</label>
+          <textarea
+            rows="4"
+            placeholder="Cuéntanos tu caso..."
+            class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 outline-none"
+          ></textarea>
+        </div>
+
+        <div class="md:col-span-2 flex items-center gap-2">
+          <input type="checkbox" id="privacidad" class="accent-blue-600" />
+          <label for="privacidad" class="text-gray-600 text-sm">
+            Acepto la política de privacidad
+          </label>
+        </div>
+
+        <div class="md:col-span-2">
+          <a
+            href="https://wa.me/573106314709?text=Hola%20AutoFix,%20quiero%20más%20información%20sobre%20sus%20servicios"
+            target="_blank"
+            class="inline-flex items-center gap-2 bg-green-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-600 transition"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12a11.88 11.88 0 0 0 1.66 6l-1.09 3.98 4.08-1.07A11.9 11.9 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.21-1.25-6.23-3.48-8.52zM12 22a9.9 9.9 0 0 1-5.06-1.38l-.36-.22-2.42.63.65-2.36-.23-.37A9.93 9.93 0 0 1 2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10zm5.16-7.46c-.28-.14-1.64-.81-1.9-.9-.26-.1-.45-.14-.65.14-.19.27-.75.9-.92 1.08-.17.18-.34.21-.62.07a8.09 8.09 0 0 1-2.38-1.46 8.9 8.9 0 0 1-1.65-2.04c-.17-.3 0-.46.13-.6.14-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.51-.07-.14-.65-1.56-.9-2.14-.23-.56-.47-.49-.65-.5h-.55c-.18 0-.5.07-.76.37s-1 1-1 2.42 1.03 2.8 1.17 2.99c.14.18 2.03 3.1 4.93 4.35.69.3 1.23.48 1.65.62.69.22 1.32.19 1.82.12.56-.08 1.64-.67 1.87-1.31.23-.64.23-1.18.16-1.31-.07-.13-.26-.21-.54-.35z"
+              />
+            </svg>
+            Enviar por WhatsApp
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

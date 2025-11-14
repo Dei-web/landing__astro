@@ -1,0 +1,32 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
+import BotonFlotante from "../components/botonFlotante.astro";
+const { title } = Astro.props;
+---
+
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title ? `${title} | AutoFix` : "AutoFix Taller Mecánico"}</title>
+  </head>
+
+  <body class="bg-gray-50 text-gray-800 font-sans">
+    <!-- Navbar fijo -->
+    <Navbar />
+
+    <!-- Contenido principal -->
+    <main class="container mx-auto px-4 py-10">
+      <slot />
+    </main>
+
+    <!-- Footer -->
+    <Footer />
+
+    <!-- Botón flotante de WhatsApp -->
+    <BotonFlotante />
+
+  </body>
+</html>

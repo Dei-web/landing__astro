@@ -1,0 +1,70 @@
+---
+import { Wrench, PaintBucket, Wallet, Home, Mail, } from "lucide-astro";
+---
+
+<header class="bg-white shadow-md sticky top-0 z-50">
+  <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <!-- Logo -->
+    <div class="flex items-center gap-2">
+      <Wrench class="text-blue-600 w-7 h-7" />
+      <h1 class="text-2xl font-bold text-blue-700">AutoFix</h1>
+    </div>
+
+    <!-- Menú -->
+    <div class="hidden md:flex space-x-8 items-center">
+
+      <a
+        href="#inicio"
+        class="flex items-center gap-1 text-gray-700 hover:text-blue-600 transition"
+      >
+        <Home class="w-5 h-5" /> Inicio
+      </a>
+
+      <!-- Servicios -->
+      <div class="relative group">
+        <a
+          href="#servicios"
+          class="flex items-center gap-1 text-gray-700 hover:text-blue-600 transition"
+        >
+          <Wrench class="w-5 h-5" />
+          <span>Servicios</span>
+          <svg
+            class="w-4 h-4 transition-transform group-hover:rotate-180"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </a>
+        <div
+          class="absolute top-full left-0 mt-2 w-48 bg-white text-gray-800 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200"
+        >
+          <a
+            href="#pintura"
+            class="flex items-center gap-2 px-4 py-3 hover:bg-blue-50 transition rounded-lg"
+          >
+            <PaintBucket class="w-5 h-5 text-blue-500" /> Pintura
+          </a>
+        </div>
+      </div>
+      <a
+        href="#contacto"
+        class="flex items-center gap-1 text-gray-700 hover:text-blue-600 transition"
+      >
+        <Mail class="w-5 h-5" /> Contacto
+      </a>
+
+      <a
+        href="#precios"
+        class="flex items-center gap-1 text-gray-700 hover:text-blue-600 transition"
+      >
+        <Wallet class="w-5 h-5" /> precio
+      </a>
+    </div>
+  </nav>
+</header>
